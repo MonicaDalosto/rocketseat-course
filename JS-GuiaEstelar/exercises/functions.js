@@ -1,5 +1,5 @@
 /*
-### Celsius em Fahrenheit:
+    Buscando e contando dados em Arrays
 
 Crie uma função que receba uma string em celsius ou fahrenheit
 e faça a transformação de uma unidade para outra 
