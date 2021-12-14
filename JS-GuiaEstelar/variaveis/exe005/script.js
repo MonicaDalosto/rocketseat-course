@@ -18,7 +18,7 @@ const person = {
     isSubscribed: true
 }
 console.log(person)
-console.log(`${person.name} tem ${person.age}, recebeu ${person.stars} estrelas e a sua subscrição possui valor ${person.isSubscribed}!`)
+console.log(`${person.name} tem ${person.age} anos, recebeu ${person.stars} estrelas e a sua subscrição possui valor ${person.isSubscribed}!`)
 
 /*  
     4. A variável student abaixo é de que tipo de dados?

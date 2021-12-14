@@ -12,7 +12,7 @@ function sayMyName(name = '') {
         throw 'Nome é obrigatório'
     }
 
-    console.log(name)
+    console.log('depois do erro')
 }
 
 /*

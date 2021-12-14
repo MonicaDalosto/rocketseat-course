@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Fomulários de outro planeta</h2>
+    <h3>FORM: fieldset | legend | label</h3>
+    <form id="contact" action=""></form>
+    <fieldset form="contact" name="inputs-contact">
+      <legend>Contact</legend>
+      <!-- 1° opção de label -->
+      <label>
+        Full Name:
+        <input type="text" />
+      </label>
+      <!-- 2° opção de label -->
+      <label for="name">Full Name:</label>
+      <input id="name" type="text" />
+    </fieldset>
+
+    <h3>BUTTON</h3>
+
+    <h3>DATALIST</h3>
+    <input type="text" list="fruitsdata" placeholder="Escolha uma fruta" />
+
+    <datalist id="fruitsdata">
+      <option>apple</option>
+      <option>banana</option>
+      <option>mango</option>
+      <option>orange</option>
+      <option>cherry</option>
+    </datalist>
+
+    <input type="color" list="colordata" placeholder="Escolha uma fruta" />
+
+    <datalist id="colordata">
+      <option>#ff0000</option>
+      <option>#00ff00</option>
+      <option>#0000ff</option>
+    </datalist>
+
+    <h3>INPUT</h3>
+    <label for="email">E-mail:</label>
+    <input
+      id="email"
+      type="text"
+      autocomplete="email"
+      autofocus
+      required
+      placeholder="Digite seu e-mail"
+    />
+
+    <h3>INPUT: PASSWORD</h3>
+    <input
+      type="password"
+      pattern="[0-9a-fA-F]{4,8}"
+      title="Coloque HEX, no mínimo 4 e no máximo 8 caracteres!"
+      placeholder="Coloque sua senha"
+    />
+
+    <h3>INPUT: CHECKBOX</h3>
+    <p>Exemplo de como marcar múltiplos valores...</p>
+    <fieldset>
+      <legend>Choose your interests</legend>
+      <div>
+        <input
+          type="checkbox"
+          name="interest"
+          id="coding"
+          value="coding"
+          checked
+        />
+        <label for="coding">Coding</label>
+      </div>
+      <div>
+        <input type="checkbox" name="interest" id="music" value="music" />
+        <label for="music">music</label>
+      </div>
+    </fieldset>
+
+    <h3>INPUT: RADIO</h3>
+    <fieldset>
+      <legend>Bora tomar um café?</legend>
+
+      <input checked type="radio" name="coffee" id="yep" value="yes" />
+      <label for="yep">sim</label>
+
+      <input type="radio" name="coffee" id="nono" value="no" />
+      <label for="nono">não</label>
+    </fieldset>
+
+    <h3>SELECT e OPTION</h3>
+    <label for="carselect">Qual o modelo do carro?</label>
+    <!-- O for da label vincula a label ao ID do select, input, form etc. -->
+    <br />
+    <!-- value e name são atributos utilizados pelo JS. Em JS, Value é o valor que será recebido pela variável Name, de acordo com a opção escolhida  -->
+    <select name="carmodel" id="carselect" multiple size="2">
+      <option value="">Escolha uma opção:</option>
+      <option value="fiat">Uno</option>
+      <option value="audi">A3</option>
+      <option value="bmw">X6</option>
+    </select>
+
+    <h3>OPTGROUP</h3>
+    <label
+      >Please, choose one or more Pets:
+      <br />
+      <select name="pets" multiple size="8">
+        <optgroup label="4-legged pets">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+          <option value="parrot">Parrot</option>
+          <option value="macaw">Macaw</option>
+          <option value="albatross">Albatross</option>
+        </optgroup>
+      </select>
+    </label>
+  </body>
+</html>
+<!--  -->
