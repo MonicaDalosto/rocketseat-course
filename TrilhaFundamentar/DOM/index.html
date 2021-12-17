@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    > -->
+    <style>
+      body {
+        display: flex;
+        width: 80rem;
+      }
+      button {
+        background-color: rgb(133, 21, 133);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100px;
+        border-radius: 5px;
+      }
+      div#closeModal{
+        display: none;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- class="h-screen bg-purple-100 flex flex-col items-center justify-center" -->
+    <button id="openModal">
+      Abrir Janela
+    </button>
+
+    <div></div> 
+    <!-- class=" modal-wrapper invisible fixed bg-gray-500 w-screen h-screen flex items-center justify-center" -->
+      <div id="closeModal">Tecle ESC para fechar</div>
+    </div>
+
+    <script src="modal.js"></script>
+  </body>
+</html>
